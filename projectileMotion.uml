@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_ZdqZwL3HEe22AIDE_oSHgA" name="projectileMotion">
+    <eAnnotations xmi:id="_ZifPYL3HEe22AIDE_oSHgA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_ZihEkL3HEe22AIDE_oSHgA" source="codegen">
+        <details xmi:id="_ZihroL3HEe22AIDE_oSHgA" key="codegenDirectory" value="/projectileMotion/src"/>
+        <details xmi:id="_ZspQ8L3HEe22AIDE_oSHgA" key="AssociatedSourceCode" value="/projectileMotion/src/projectileMotion/Home.java;456789059/1;/projectileMotion/src/projectileMotion/enterProperties.java;2949169981/1;/projectileMotion/src/projectileMotion/main.java;1649500992/1;/projectileMotion/src/projectileMotion/model.java;2708037882/1;/projectileMotion/src/projectileMotion/simList.java;98086530/1;/projectileMotion/src/projectileMotion/simulation.java;2582528641/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_ZotMIL3HEe22AIDE_oSHgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_ZotMIb3HEe22AIDE_oSHgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_ZotMIr3HEe22AIDE_oSHgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_ZotMI73HEe22AIDE_oSHgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_ZotMJL3HEe22AIDE_oSHgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_ZotMJb3HEe22AIDE_oSHgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_ZotMJr3HEe22AIDE_oSHgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_ZotMJ73HEe22AIDE_oSHgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_ZotzML3HEe22AIDE_oSHgA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZovBUL3HEe22AIDE_oSHgA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZovoYL3HEe22AIDE_oSHgA" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ZovoYb3HEe22AIDE_oSHgA" name="event">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Zp9wYb3HEe22AIDE_oSHgA" name="ActionEvent"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_Zp-XcL3HEe22AIDE_oSHgA" name="ActionListener"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Zo0g4L3HEe22AIDE_oSHgA" name="geom">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Zp_lkb3HEe22AIDE_oSHgA" name="Path2D"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Zp9JUL3HEe22AIDE_oSHgA" name="Font"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZqBawL3HEe22AIDE_oSHgA" name="GridLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZqG6Ub3HEe22AIDE_oSHgA" name="Image"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZqIIcL3HEe22AIDE_oSHgA" name="Graphics"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZoyEoL3HEe22AIDE_oSHgA" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Zp--gL3HEe22AIDE_oSHgA" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Zp--gr3HEe22AIDE_oSHgA" name="Scanner"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZoyrsL3HEe22AIDE_oSHgA" name="io"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Zo0g4b3HEe22AIDE_oSHgA" name="lang">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Zo0g4r3HEe22AIDE_oSHgA" name="Math"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZovoYr3HEe22AIDE_oSHgA" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZovoY73HEe22AIDE_oSHgA" name="swing">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZqDP8L3HEe22AIDE_oSHgA" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZqD3AL3HEe22AIDE_oSHgA" name="JPanel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZqHhYb3HEe22AIDE_oSHgA" name="Timer"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZoxdkL3HEe22AIDE_oSHgA" name="projectileMotion">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZpAHEL3HEe22AIDE_oSHgA" name="Home">
+        <ownedAttribute xmi:id="_ZqLy0L3HEe22AIDE_oSHgA" name="frame" visibility="package" type="_ZqDP8L3HEe22AIDE_oSHgA" association="_ZqcRgL3HEe22AIDE_oSHgA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqTuoL3HEe22AIDE_oSHgA" name="Home" specification="_ZpCjUL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqTuob3HEe22AIDE_oSHgA" type="_ZpAHEL3HEe22AIDE_oSHgA" direction="return"/>
+          <language>java</language>
+          <body>frame = new JFrame(&quot;Home&quot;);
+
+		String introContent = &quot;This simulation will allow you to test out the motion of a projectile \nmoving at a certain speed at a certain angle. You will also be able \nto change other properties such as its height, mass and diameter.\nSimulations can be saved, and saved simulations can be edited.&quot;;
+
+		JTextArea introTextArea = new JTextArea(introContent);
+		introTextArea.setFont(new Font(&quot;Verdana&quot;, Font.PLAIN, 24));
+		introTextArea.setBounds(100,100,800,130);
+		introTextArea.setEditable(false);
+		
+		JButton beginSim = new JButton(&quot;Begin Simulation&quot;);
+		beginSim.setBounds(400,300,150,50);
+
+		frame.add(introTextArea);
+		frame.add(beginSim);
+		
+		frame.setSize(1000,700);
+     frame.setLayout(null);
+     frame.setVisible(true);
+     frame.setResizable(false);
+     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+     
+     beginSim.addActionListener(new ActionListener() {
+     	@Override
+     	public void actionPerformed(ActionEvent arg0) {
+     		new simList();
+     		frame.dispose();
+     	}
+     });
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqWx8L3HEe22AIDE_oSHgA" name="main" specification="_ZpDxcL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqWx8b3HEe22AIDE_oSHgA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZqWx8r3HEe22AIDE_oSHgA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>new Home();
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_ZpCjUL3HEe22AIDE_oSHgA" name="Home" visibility="package" method="_ZqTuoL3HEe22AIDE_oSHgA">
+          <eAnnotations xmi:id="_ZpDKYL3HEe22AIDE_oSHgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_ZpDKYb3HEe22AIDE_oSHgA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_ZpDKYr3HEe22AIDE_oSHgA" type="_ZpAHEL3HEe22AIDE_oSHgA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpDxcL3HEe22AIDE_oSHgA" name="main" isStatic="true" method="_ZqWx8L3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpDxcb3HEe22AIDE_oSHgA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZpDxcr3HEe22AIDE_oSHgA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZpEYgL3HEe22AIDE_oSHgA" name="enterProperties">
+        <ownedAttribute xmi:id="_ZqLy0r3HEe22AIDE_oSHgA" name="x" visibility="private" type="_Zp--gr3HEe22AIDE_oSHgA" association="_Zqc4kL3HEe22AIDE_oSHgA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqXZAL3HEe22AIDE_oSHgA" name="enterProperties" specification="_ZpEYgb3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqXZAb3HEe22AIDE_oSHgA" name="Name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZAr3HEe22AIDE_oSHgA" name="Mass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZA73HEe22AIDE_oSHgA" name="Velocity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZBL3HEe22AIDE_oSHgA" name="Diameter">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZBb3HEe22AIDE_oSHgA" name="Angle">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZBr3HEe22AIDE_oSHgA" name="Height">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZB73HEe22AIDE_oSHgA" name="newSim">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZCL3HEe22AIDE_oSHgA" type="_ZpEYgL3HEe22AIDE_oSHgA" direction="return"/>
+          <language>java</language>
+          <body>JFrame frame = new JFrame(&quot;Enter Properties&quot;);
+		
+		
+		JLabel instruction = new JLabel(&quot;Please enter the properties of the projectile:&quot;);
+		instruction.setFont(new Font(&quot;Verdana&quot;, Font.BOLD, 18));
+		instruction.setBounds(300,50,800,50);
+		
+		JLabel mass = new JLabel(&quot;Mass(kg):&quot;);
+		mass.setFont(new Font(&quot;Verdana&quot;, Font.PLAIN, 18));
+		mass.setBounds(300,100,100,50);
+		
+		JTextField massInput = new JTextField(Mass);
+		massInput.setBounds(400,105,350,40);
+		
+		JLabel velocity = new JLabel(&quot;Velocity(m/s):&quot;);
+		velocity.setFont(new Font(&quot;Verdana&quot;, Font.PLAIN, 18));
+		velocity.setBounds(300,150,200,50);
+		
+		JTextField velocityInput = new JTextField(Velocity);
+		velocityInput.setBounds(450,155,300,40);
+		
+		JLabel diameter = new JLabel(&quot;Diameter(m):&quot;);
+		diameter.setFont(new Font(&quot;Verdana&quot;, Font.PLAIN, 18));
+		diameter.setBounds(300,200,200,50);
+		
+		JTextField diameterInput = new JTextField(Diameter);
+		diameterInput.setBounds(450,205,300,40);
+		
+		JLabel angle = new JLabel(&quot;Angle(degrees):&quot;);
+		angle.setFont(new Font(&quot;Verdana&quot;, Font.PLAIN, 18));
+		angle.setBounds(300,250,200,50);
+		
+		JTextField angleInput = new JTextField(Angle);
+		angleInput.setBounds(460,255,290,40);
+		
+		JLabel height = new JLabel(&quot;Height(m):&quot;);
+		height.setFont(new Font(&quot;Verdana&quot;, Font.PLAIN, 18));
+		height.setBounds(300,300,200,50);
+		
+		JTextField heightInput = new JTextField(Height);
+		heightInput.setBounds(420,305,330,40);
+		
+		JButton submitData = new JButton(&quot;Submit&quot;);
+		submitData.setBounds(450,380,150,50);
+		
+		
+		frame.add(instruction);
+		frame.add(mass);
+		frame.add(massInput);
+		frame.add(velocity);
+		frame.add(velocityInput);
+		frame.add(diameter);
+		frame.add(diameterInput);
+		frame.add(angle);
+		frame.add(angleInput);
+		frame.add(height);
+		frame.add(heightInput);
+		frame.add(submitData);
+		
+		frame.setSize(1000,700);
+     frame.setLayout(null);
+     frame.setVisible(true);
+     frame.setResizable(false);
+     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+     
+     submitData.addActionListener(new ActionListener() {
+     	@Override
+     	public void actionPerformed(ActionEvent arg0) {
+     		try {
+     			Float.parseFloat(massInput.getText());
+     		} catch (NumberFormatException e) {
+     			JOptionPane.showMessageDialog(frame, &quot;Mass has to be a number&quot;,
+							&quot;Invalid Input&quot;,JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+     		if(Float.parseFloat(massInput.getText()) &lt; 0 || Float.parseFloat(massInput.getText()) > 10000) {
+     			JOptionPane.showMessageDialog(frame, &quot;Mass has to be between 0 and 10,000&quot;,
+							&quot;Invalid Input&quot;,JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+     		
+     		try {
+     			Float.parseFloat(velocityInput.getText());
+     		} catch (NumberFormatException e) {
+     			JOptionPane.showMessageDialog(frame, &quot;Veloicty has to be a number&quot;, &quot;Invalid Input&quot;, JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+     		if(Float.parseFloat(velocityInput.getText()) &lt; 0 || Float.parseFloat(velocityInput.getText()) > 10000) {
+     			JOptionPane.showMessageDialog(frame, &quot;Velocity has to be between 0 and 10,000&quot;, &quot;Invalid Input&quot;,JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+     		
+     		try {
+     			Float.parseFloat(diameterInput.getText());
+     		} catch (NumberFormatException e) {
+     			JOptionPane.showMessageDialog(frame, &quot;Diameter has to be a number&quot;, &quot;Invalid Input&quot;, JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+     		if(Float.parseFloat(diameterInput.getText()) &lt; 0 || Float.parseFloat(velocityInput.getText()) > 10000) {
+     			JOptionPane.showMessageDialog(frame, &quot;Diameter has to be between 0 and 10,000&quot;, &quot;Invalid Input&quot;,JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+     		
+     		try {
+     			Float.parseFloat(angleInput.getText());
+     		} catch (NumberFormatException e) {
+     			JOptionPane.showMessageDialog(frame, &quot;Angle has to be a number&quot;, &quot;Invalid Input&quot;, JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+     		if(Float.parseFloat(angleInput.getText()) &lt; 0 || Float.parseFloat(angleInput.getText()) > 90) {
+     			JOptionPane.showMessageDialog(frame, &quot;Angle has to be between 0 and 90 degrees&quot;, &quot;Invalid Input&quot;,JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+     		
+     		try {
+     			Float.parseFloat(heightInput.getText());
+     		} catch (NumberFormatException e) {
+     			JOptionPane.showMessageDialog(frame, &quot;Height has to be a number&quot;, &quot;Invalid Input&quot;, JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+     		if(Float.parseFloat(heightInput.getText()) &lt; 0 || Float.parseFloat(velocityInput.getText()) > 10000) {
+     			JOptionPane.showMessageDialog(frame, &quot;Height has to be between 0 and 10,000&quot;, &quot;Invalid Input&quot;,JOptionPane.ERROR_MESSAGE);
+     			return;
+     		}
+
+				if(newSim){
+					new simulation(null, massInput.getText(), velocityInput.getText(), diameterInput.getText(), angleInput.getText(), heightInput.getText(), true);
+					frame.dispose();
+				}
+     		else{
+					try{
+						String filepath = &quot;savedSims.csv&quot;;
+						String tempfile = &quot;empty.csv&quot;;
+						File oldFile = new File(filepath);
+						File newFile = new File(tempfile);
+
+						FileWriter fw = new FileWriter(tempfile, true);
+						BufferedWriter bw = new BufferedWriter(fw);
+						PrintWriter pw = new PrintWriter(bw);
+
+						x = new Scanner(new File(filepath));
+						x.useDelimiter(&quot;[,\n]&quot;);
+						while (x.hasNext()){
+							String nameFound = x.next();
+							String massFound = x.next();
+							String velFound = x.next();
+							String diaFound = x.next();
+							String angFound = x.next();
+							String heightFound = x.next();
+							if(nameFound.equals(&quot;\&quot;&quot; + Name + &quot;\&quot;&quot;)){
+								pw.print(nameFound +  &quot;,\&quot;&quot; + massInput.getText() + &quot;\&quot;,\&quot;&quot; + velocityInput.getText() + &quot;\&quot;,\&quot;&quot; + diameterInput.getText() + &quot;\&quot;,\&quot;&quot; + angleInput.getText() + &quot;\&quot;,\&quot;&quot; + heightInput.getText() + &quot;\&quot;\n&quot;);
+							}
+							else{
+								pw.print(nameFound + &quot;,&quot; + massFound + &quot;,&quot; + velFound + &quot;,&quot; + diaFound + &quot;,&quot; + angFound + &quot;,&quot; + heightFound + &quot;\n&quot;);
+							}
+						}
+
+						x.close();
+						pw.flush();
+						pw.close();
+						oldFile.delete();
+						File dump = new File(filepath);
+						newFile.renameTo(dump);
+
+						File myObj = new File(&quot;empty.csv&quot;);
+						myObj.createNewFile();
+					}
+					catch (Exception e) {
+						e.printStackTrace();
+					}
+
+
+					new simulation(Name, massInput.getText(), velocityInput.getText(), diameterInput.getText(), angleInput.getText(), heightInput.getText(), false);
+					frame.dispose();
+				}
+     	}
+     });
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_ZpEYgb3HEe22AIDE_oSHgA" name="enterProperties" visibility="package" method="_ZqXZAL3HEe22AIDE_oSHgA">
+          <eAnnotations xmi:id="_ZpE_l73HEe22AIDE_oSHgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_ZpE_mL3HEe22AIDE_oSHgA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_ZpE_kL3HEe22AIDE_oSHgA" name="Name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpE_kb3HEe22AIDE_oSHgA" name="Mass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpE_kr3HEe22AIDE_oSHgA" name="Velocity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpE_k73HEe22AIDE_oSHgA" name="Diameter">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpE_lL3HEe22AIDE_oSHgA" name="Angle">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpE_lb3HEe22AIDE_oSHgA" name="Height">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpE_lr3HEe22AIDE_oSHgA" name="newSim">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpE_mb3HEe22AIDE_oSHgA" type="_ZpEYgL3HEe22AIDE_oSHgA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZpFmoL3HEe22AIDE_oSHgA" name="main"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZpFmob3HEe22AIDE_oSHgA" name="model">
+        <generalization xmi:id="_ZqKksL3HEe22AIDE_oSHgA" general="_ZqD3AL3HEe22AIDE_oSHgA"/>
+        <ownedAttribute xmi:id="_ZqMZ4b3HEe22AIDE_oSHgA" name="PANEL_HEIGHT" visibility="package" isLeaf="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZqMZ4r3HEe22AIDE_oSHgA" value="500"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqMZ5L3HEe22AIDE_oSHgA" name="theta" visibility="package" isLeaf="true" type="_ZqG6Ub3HEe22AIDE_oSHgA" isReadOnly="true" association="_Zqdfob3HEe22AIDE_oSHgA"/>
+        <ownedAttribute xmi:id="_ZqNA8L3HEe22AIDE_oSHgA" name="timer" visibility="private" type="_ZqHhYb3HEe22AIDE_oSHgA" association="_ZqeGsb3HEe22AIDE_oSHgA"/>
+        <ownedAttribute xmi:id="_ZqNA8r3HEe22AIDE_oSHgA" name="initialVel" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZqNA873HEe22AIDE_oSHgA" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqNA9b3HEe22AIDE_oSHgA" name="height" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqNA973HEe22AIDE_oSHgA" name="angle" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqNoAb3HEe22AIDE_oSHgA" name="time" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZqNoAr3HEe22AIDE_oSHgA" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqNoBL3HEe22AIDE_oSHgA" name="x" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_ZqNoBb3HEe22AIDE_oSHgA" value="25"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqNoB73HEe22AIDE_oSHgA" name="y" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqOPEb3HEe22AIDE_oSHgA" name="prevXPosition" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqOPE73HEe22AIDE_oSHgA" name="prevYPosition" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqOPFb3HEe22AIDE_oSHgA" name="maxX" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqOPF73HEe22AIDE_oSHgA" name="initX" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_ZqO2IL3HEe22AIDE_oSHgA" name="initY" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <interfaceRealization xmi:id="_ZqG6UL3HEe22AIDE_oSHgA" client="_ZpFmob3HEe22AIDE_oSHgA" supplier="_Zp-XcL3HEe22AIDE_oSHgA" contract="_Zp-XcL3HEe22AIDE_oSHgA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqXZCb3HEe22AIDE_oSHgA" name="model" specification="_ZpG0wL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqXZCr3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZC73HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZDL3HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZDb3HEe22AIDE_oSHgA" type="_ZpFmob3HEe22AIDE_oSHgA" direction="return"/>
+          <language>java</language>
+          <body>initialVel = vel;
+		angle = ang;
+		height = 525 - hgt;
+		y = height;
+		maxX = maxDisplacement(vel, angle, height);
+		int PANEL_WIDTH = 600;
+		this.setPreferredSize(new Dimension(PANEL_WIDTH, PANEL_HEIGHT));
+		this.setBackground(Color.WHITE);
+		theta = new ImageIcon(&quot;blackdot.png&quot;).getImage();
+		timer = new Timer(30, this);
+		timer.start();
+
+
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqXZDr3HEe22AIDE_oSHgA" name="paint" specification="_ZqIIcr3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqXZD73HEe22AIDE_oSHgA" name="g" type="_ZqIIcL3HEe22AIDE_oSHgA"/>
+          <language>java</language>
+          <body>super.paint(g);
+		Graphics2D g2D = (Graphics2D) g;
+		g2D.drawImage(theta, (int)x, (int)y, 50, 50, null);
+
+		// draw quadratic curve
+		if(y > 525){
+			Path2D p = new Path2D.Double();
+			p.moveTo(initX,600 - initY);
+			int midPointX = (int) ((initX + maxX)/2);
+			int midPointY = (int) (height -(initialVel * (midPointX/(initialVel * Math.cos((angle * Math.PI)/180)))) + (0.5 * 9.81 * (midPointX/(initialVel * Math.cos((angle * Math.PI)/180))) * (midPointX/(initialVel * Math.cos((angle * Math.PI)/180)))));
+			int yControl = (int) ((midPointY - (initY - 0.75))/0.75);
+			p.quadTo(20, 1100 - yControl, (float) x, 550);
+			System.out.println(yControl);
+
+			g2D.draw(p);
+		}
+
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqXZEL3HEe22AIDE_oSHgA" name="actionPerformed" specification="_ZqJWkL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqXZEb3HEe22AIDE_oSHgA" name="e" type="_Zp9wYb3HEe22AIDE_oSHgA"/>
+          <language>java</language>
+          <body>prevXPosition = x;
+		prevYPosition = y;
+		x = initialVel * Math.cos((angle * Math.PI)/180) * time;
+		y = height -(initialVel * time) + (0.5 * 9.81 * time * time);
+
+		time = time + 0.1;
+
+		if(y &lt; 525){
+			repaint();
+		}
+
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqXZEr3HEe22AIDE_oSHgA" name="maxDisplacement" specification="_ZpG0x73HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqXZE73HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZFL3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZFb3HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqXZFr3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>double t = timeTaken(vel, ang, hgt);
+
+		double maxDis = vel * Math.cos((ang * Math.PI)/180) * t;
+
+		return maxDis;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqYAEL3HEe22AIDE_oSHgA" name="maxHeight" specification="_ZpHb0r3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqYAEb3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYAEr3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYAE73HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYAFL3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>double g = 9.81;
+		double hmax = vel * vel;
+		hmax = hmax * Math.sin((ang * Math.PI)/180) * Math.sin((ang * Math.PI)/180);
+		hmax = hmax / (2 * g);
+		hmax = hmax + hgt;
+
+		return hmax;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqYAFb3HEe22AIDE_oSHgA" name="timeTaken" specification="_ZpIC4L3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqYAFr3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYAF73HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYAGL3HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYAGb3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>double vy = vel * Math.sin((ang * Math.PI)/180);
+		double g = 9.81;
+		double ti = Math.sqrt(vy * vy + 2 * g * hgt);
+		ti = ti + vy;
+		ti = ti/g;
+		return ti;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_ZpG0wL3HEe22AIDE_oSHgA" name="model" visibility="package" method="_ZqXZCb3HEe22AIDE_oSHgA">
+          <eAnnotations xmi:id="_ZpG0xL3HEe22AIDE_oSHgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_ZpG0xb3HEe22AIDE_oSHgA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_ZpG0wb3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpG0wr3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpG0w73HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpG0xr3HEe22AIDE_oSHgA" type="_ZpFmob3HEe22AIDE_oSHgA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpG0x73HEe22AIDE_oSHgA" name="maxDisplacement" method="_ZqXZEr3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpG0yL3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpG0yb3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpHb0L3HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpHb0b3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpHb0r3HEe22AIDE_oSHgA" name="maxHeight" method="_ZqYAEL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpHb073HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpHb1L3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpHb1b3HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpHb1r3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpIC4L3HEe22AIDE_oSHgA" name="timeTaken" method="_ZqYAFb3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpIC4b3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpIC4r3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpIC473HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpIC5L3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZqIIcr3HEe22AIDE_oSHgA" name="paint" method="_ZqXZDr3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqIIc73HEe22AIDE_oSHgA" name="g" type="_ZqIIcL3HEe22AIDE_oSHgA"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZqJWkL3HEe22AIDE_oSHgA" name="actionPerformed" method="_ZqXZEL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqJWkb3HEe22AIDE_oSHgA" name="e" type="_Zp9wYb3HEe22AIDE_oSHgA"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZpJ4EL3HEe22AIDE_oSHgA" name="simList">
+        <ownedAttribute xmi:id="_ZqO2Ir3HEe22AIDE_oSHgA" name="savedSims" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZqO2I73HEe22AIDE_oSHgA" value="*"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqYAGr3HEe22AIDE_oSHgA" name="simList" specification="_ZpKfIL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqYAG73HEe22AIDE_oSHgA" type="_ZpJ4EL3HEe22AIDE_oSHgA" direction="return"/>
+          <language>java</language>
+          <body>int numberOfSims = totalSims(&quot;savedSims.csv&quot;);
+
+		savedSims = new String[numberOfSims][6];
+
+		savedSims = getSavedSims(&quot;savedSims.csv&quot;);
+		JFrame frame = new JFrame(&quot;Simulation List&quot;);
+
+		
+		JPanel heading = new JPanel();
+		JLabel savedHeading = new JLabel(&quot;Saved Simulations&quot;);
+		savedHeading.setFont(new Font(&quot;Verdana&quot;, Font.PLAIN, 18));
+		heading.add(savedHeading);
+		
+		JPanel list = new JPanel(new GridLayout(numberOfSims,1));
+
+		JButton[] simButtons = new JButton[numberOfSims];
+
+		ActionListener listener = new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				String simName = ((JButton) e.getSource()).getText();
+
+				for(int i = 0; i &lt; numberOfSims; i++){
+					if(savedSims[i][0].equals(simName)){
+						new simulation(savedSims[i][0], savedSims[i][1], savedSims[i][2], savedSims[i][3], savedSims[i][4], savedSims[i][5], false);
+					}
+				}
+
+				frame.dispose();
+			}
+		};
+
+		for(int i = 0; i &lt; numberOfSims; i++){
+			simButtons[i] = new JButton(savedSims[i][0]);
+			simButtons[i].addActionListener(listener);
+			list.add(simButtons[i]);
+		}
+		
+		JPanel end = new JPanel();
+		JButton newSim = new JButton(&quot;New Simulation&quot;);
+		end.add(newSim);
+		
+		
+		frame.add(heading);
+		frame.add(list);
+		frame.add(end);
+		
+		frame.setSize(1000,700);
+     frame.setLayout(new GridLayout(3,1));
+     frame.setVisible(true);
+     frame.setResizable(false);
+     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+     
+     
+     newSim.addActionListener(new ActionListener() {
+     	@Override
+     	public void actionPerformed(ActionEvent arg0) {
+     		new enterProperties(&quot;&quot;, &quot;&quot;, &quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,true);
+     		frame.dispose();
+     	}
+     });
+
+
+
+
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqYAHL3HEe22AIDE_oSHgA" name="totalSims" specification="_ZpKfJL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqYAHb3HEe22AIDE_oSHgA" name="FILENAME">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYAHr3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>try{
+			BufferedReader bufferedReader = new BufferedReader(new FileReader(FILENAME));
+			String input;
+			int count = 0;
+			while((input = bufferedReader.readLine()) != null)
+			{
+				count++;
+			}
+
+			return count;
+		}
+		catch (Exception e){
+			return -1;
+		}
+
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqYAH73HEe22AIDE_oSHgA" name="getSavedSims" specification="_ZpKfJ73HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqYAIL3HEe22AIDE_oSHgA" name="file">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYAIb3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZqYAIr3HEe22AIDE_oSHgA" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String simsInCSV[][] = new String[1000][6];
+		try {
+			FileReader filereader = new FileReader(file);
+			CSVReader csvReader = new CSVReader(filereader);
+			String[] nextRecord;
+
+
+
+			int i = 0;
+			while ((nextRecord = csvReader.readNext()) != null) {
+
+				int j = 0;
+				for (String cell : nextRecord){
+
+					simsInCSV[i][j] = cell;
+					j++;
+				}
+				i++;
+			}
+			return simsInCSV;
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_ZpKfIL3HEe22AIDE_oSHgA" name="simList" visibility="package" method="_ZqYAGr3HEe22AIDE_oSHgA">
+          <eAnnotations xmi:id="_ZpKfIb3HEe22AIDE_oSHgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_ZpKfIr3HEe22AIDE_oSHgA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_ZpKfI73HEe22AIDE_oSHgA" type="_ZpJ4EL3HEe22AIDE_oSHgA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpKfJL3HEe22AIDE_oSHgA" name="totalSims" method="_ZqYAHL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpKfJb3HEe22AIDE_oSHgA" name="FILENAME">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpKfJr3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpKfJ73HEe22AIDE_oSHgA" name="getSavedSims" method="_ZqYAH73HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpKfKL3HEe22AIDE_oSHgA" name="file">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpLGML3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZpLGMb3HEe22AIDE_oSHgA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZpLGM73HEe22AIDE_oSHgA" name="simulation">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqYnIL3HEe22AIDE_oSHgA" name="simulation" specification="_ZpLtQL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqYnIb3HEe22AIDE_oSHgA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYnIr3HEe22AIDE_oSHgA" name="mass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYnI73HEe22AIDE_oSHgA" name="velocity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYnJL3HEe22AIDE_oSHgA" name="diameter">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYnJb3HEe22AIDE_oSHgA" name="angle">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYnJr3HEe22AIDE_oSHgA" name="height">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYnJ73HEe22AIDE_oSHgA" name="newSim">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqYnKL3HEe22AIDE_oSHgA" type="_ZpLGM73HEe22AIDE_oSHgA" direction="return"/>
+          <language>java</language>
+          <body>JFrame frame;
+		if(name != null){
+			frame = new JFrame(&quot;Simulation: &quot; + name);
+		}
+		else{
+			frame = new JFrame(&quot;Simulation&quot;);
+		}
+
+		JPanel model = new model( Double.parseDouble(velocity) , Double.parseDouble(angle), Double.parseDouble(height));
+		model.setBounds(0, 0, 800, 600);
+		frame.add(model);
+		
+		JPanel properties = new JPanel(new GridLayout(6,1));
+		JLabel propHeading = new JLabel(&quot;Properties&quot;, SwingConstants.CENTER);
+		propHeading.setFont(new Font(&quot;Verdana&quot;, Font.BOLD, 18));
+		JLabel velLabel = new JLabel(&quot;Velocity: &quot; + velocity + &quot; m/s&quot;);
+		JLabel massLabel = new JLabel(&quot;Mass: &quot; + mass + &quot; kg&quot;);
+		JLabel diaLabel = new JLabel(&quot;Diameter: &quot; + diameter + &quot; m&quot;);
+		JLabel angLabel = new JLabel(&quot;Angle: &quot; + angle + &quot;°&quot;);
+		JLabel heiLabel = new JLabel(&quot;Height: &quot; + height + &quot; m&quot;);
+		properties.add(propHeading);
+		properties.add(velLabel);
+		properties.add(massLabel);
+		properties.add(diaLabel);
+		properties.add(angLabel);
+		properties.add(heiLabel);
+		properties.setBackground(new Color(102,255,102));
+		properties.setBounds(800, 0, 200, 200);
+
+
+		JPanel velAtPoint = new JPanel(new GridLayout(4, 1));
+		JLabel askVel = new JLabel(&quot;Velocity at time(s):&quot;, SwingConstants.CENTER);
+		askVel.setFont(new Font(&quot;Verdana&quot;, Font.BOLD, 18));
+		JTextField enterTime = new JTextField();
+		JButton showVel = new JButton(&quot;Show Velocity&quot;);
+		JLabel velDisp = new JLabel();
+		velAtPoint.add(askVel);
+		velAtPoint.add(enterTime);
+		velAtPoint.add(showVel);
+		velAtPoint.add(velDisp);
+		velAtPoint.setBackground(new Color(255,102,102));
+		velAtPoint.setBounds(800, 200, 200, 150);
+
+		JPanel results = new JPanel(new GridLayout(4, 1));
+		JLabel resHeading = new JLabel(&quot;Results&quot;, SwingConstants.CENTER);
+		resHeading.setFont(new Font(&quot;Verdana&quot;, Font.BOLD, 18));
+		JLabel maxDist = new JLabel(&quot;&lt;html>Maximum Displacement: &lt;br/>&quot; + String.format(&quot;%.2f&quot;,maxDisplacement( Double.parseDouble(velocity) , Double.parseDouble(angle), Double.parseDouble(height))) + &quot; m&lt;/html>&quot;);
+		JLabel maxHgt = new JLabel(&quot;&lt;html>Maximum Height: &lt;br/>&quot; + String.format(&quot;%.2f&quot;,maxHeight( Double.parseDouble(velocity) , Double.parseDouble(angle), Double.parseDouble(height))) + &quot; m&lt;/html>&quot;);
+		JLabel tTaken = new JLabel(&quot;&lt;html>Time Taken: &lt;br/>&quot; + String.format(&quot;%.2f&quot;,timeTaken( Double.parseDouble(velocity) , Double.parseDouble(angle), Double.parseDouble(height)) ) + &quot; s&lt;/html>&quot;);
+		results.add(resHeading);
+		results.add(maxDist);
+		results.add(maxHgt);
+		results.add(tTaken);
+		results.setBackground(new Color(51,204,255));
+		results.setBounds(800, 350, 200, 150);
+
+		JButton saveButton = new JButton(&quot;Save&quot;);
+		JButton editButton = new JButton(&quot;Edit&quot;);
+
+		JButton backToSimList = new JButton(&quot;Simulation List&quot;);
+		backToSimList.setBounds(800,535,200,37);
+		frame.add(backToSimList);
+
+		JButton replaySim = new JButton(&quot;Replay&quot;);
+		replaySim.setBounds(900,500,100,40);
+		frame.add(replaySim);
+
+		if(newSim){
+			saveButton.setBounds(800,500,100,40);
+			frame.add(saveButton);
+		}
+
+		else{
+			editButton.setBounds(800,500,100,40);
+			frame.add(editButton);
+		}
+		
+		frame.add(properties);
+		frame.add(velAtPoint);
+		frame.add(results);
+
+
+		
+		frame.setSize(1000,600);
+     frame.setLayout(null);
+     frame.setVisible(true);
+     frame.setResizable(false);
+     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		showVel.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				String inputTime = enterTime.getText();
+				double tTime = timeTaken( Double.parseDouble(velocity) , Double.parseDouble(angle), Double.parseDouble(height));
+				if(Double.parseDouble(inputTime) > tTime){
+					velDisp.setText(&quot;The projectile stops by then.&quot;);
+				}
+				else if(Double.parseDouble(inputTime) &lt; 0){
+					velDisp.setText(&quot;Time cannot be less than 0.&quot;);
+				}
+				else{
+					velDisp.setText(String.format(&quot;%.2f&quot;, velAtTime(Double.parseDouble(velocity), Double.parseDouble(angle), Double.parseDouble(inputTime))) + &quot; m/s&quot;);
+				}
+
+			}
+		});
+
+		backToSimList.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				new simList();
+				frame.dispose();
+			}
+		});
+
+		replaySim.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				new simulation(name, mass, velocity, diameter, angle, height, newSim);
+				frame.dispose();
+			}
+		});
+
+		editButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				new enterProperties(name, mass, velocity, diameter, angle, height, false);
+				frame.dispose();
+			}
+		});
+
+		saveButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				if (newSim){
+					String newSimName = JOptionPane.showInputDialog(frame,&quot;Name of simulation:&quot;);
+					File file = new File(&quot;savedSims.csv&quot;);
+					try {
+						// create FileWriter object with file as parameter
+						FileWriter outputfile = new FileWriter(file, true);
+
+						// create CSVWriter object filewriter object as parameter
+						CSVWriter writer = new CSVWriter(outputfile);
+
+						// adding data to csv
+						String[] data = {newSimName, mass, velocity, diameter, angle, height};
+						writer.writeNext(data);
+
+						// closing writer connection
+						writer.close();
+
+					}
+					catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					new simulation(newSimName, mass, velocity, diameter, angle, height, false);
+					frame.dispose();
+				}
+
+				else{
+
+				}
+
+			}
+		});
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqYnKb3HEe22AIDE_oSHgA" name="velAtTime" specification="_ZpMUV73HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqZOML3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOMb3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOMr3HEe22AIDE_oSHgA" name="time">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOM73HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>double g = 9.81;
+		double xVec = vel * Math.cos((ang * Math.PI)/180);
+		double yVec =  (vel * Math.sin((ang * Math.PI)/180)) - (g * time);
+		double velT = Math.sqrt((xVec * xVec) + (yVec * yVec));
+		return velT;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqZONL3HEe22AIDE_oSHgA" name="maxDisplacement" specification="_ZpM7YL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqZONb3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZONr3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZON73HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOOL3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>double t = timeTaken(vel, ang, hgt);
+
+		double maxDis = vel * Math.cos((ang * Math.PI)/180) * t;
+
+		return maxDis;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqZOOb3HEe22AIDE_oSHgA" name="maxHeight" specification="_ZpM7Zb3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqZOOr3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOO73HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOPL3HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOPb3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>double g = 9.81;
+		double hmax = vel * vel;
+		hmax = hmax * Math.sin((ang * Math.PI)/180) * Math.sin((ang * Math.PI)/180);
+		hmax = hmax / (2 * g);
+		hmax = hmax + hgt;
+
+		return hmax;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZqZOPr3HEe22AIDE_oSHgA" name="timeTaken" specification="_ZpM7ar3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZqZOP73HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOQL3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOQb3HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZqZOQr3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>double vy = vel * Math.sin((ang * Math.PI)/180);
+		double g = 9.81;
+		double ti = Math.sqrt(vy * vy + 2 * g * hgt);
+		ti = ti + vy;
+		ti = ti/g;
+		return ti;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_ZpLtQL3HEe22AIDE_oSHgA" name="simulation" visibility="package" method="_ZqYnIL3HEe22AIDE_oSHgA">
+          <eAnnotations xmi:id="_ZpMUVL3HEe22AIDE_oSHgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_ZpMUVb3HEe22AIDE_oSHgA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_ZpMUVr3HEe22AIDE_oSHgA" type="_ZpLGM73HEe22AIDE_oSHgA" direction="return"/>
+          <ownedParameter xmi:id="_ZpLtQb3HEe22AIDE_oSHgA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpLtQr3HEe22AIDE_oSHgA" name="mass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpLtQ73HEe22AIDE_oSHgA" name="velocity">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpMUUL3HEe22AIDE_oSHgA" name="diameter">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpMUUb3HEe22AIDE_oSHgA" name="angle">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpMUUr3HEe22AIDE_oSHgA" name="height">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpMUU73HEe22AIDE_oSHgA" name="newSim">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpMUV73HEe22AIDE_oSHgA" name="velAtTime" method="_ZqYnKb3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpMUWL3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpMUWb3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpMUWr3HEe22AIDE_oSHgA" name="time">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpMUW73HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpM7YL3HEe22AIDE_oSHgA" name="maxDisplacement" method="_ZqZONL3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpM7Yb3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpM7Yr3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpM7Y73HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpM7ZL3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpM7Zb3HEe22AIDE_oSHgA" name="maxHeight" method="_ZqZOOb3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpM7Zr3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpM7Z73HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpM7aL3HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpM7ab3HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ZpM7ar3HEe22AIDE_oSHgA" name="timeTaken" method="_ZqZOPr3HEe22AIDE_oSHgA">
+          <ownedParameter xmi:id="_ZpNicL3HEe22AIDE_oSHgA" name="vel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpNicb3HEe22AIDE_oSHgA" name="ang">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpNicr3HEe22AIDE_oSHgA" name="hgt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_ZpNic73HEe22AIDE_oSHgA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZqcRgL3HEe22AIDE_oSHgA" name="" memberEnd="_ZqcRgb3HEe22AIDE_oSHgA _ZqLy0L3HEe22AIDE_oSHgA">
+        <ownedEnd xmi:id="_ZqcRgb3HEe22AIDE_oSHgA" name="" type="_ZpAHEL3HEe22AIDE_oSHgA" association="_ZqcRgL3HEe22AIDE_oSHgA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Zqc4kL3HEe22AIDE_oSHgA" name="" memberEnd="_Zqc4kb3HEe22AIDE_oSHgA _ZqLy0r3HEe22AIDE_oSHgA">
+        <ownedEnd xmi:id="_Zqc4kb3HEe22AIDE_oSHgA" name="" type="_ZpEYgL3HEe22AIDE_oSHgA" association="_Zqc4kL3HEe22AIDE_oSHgA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Zqdfob3HEe22AIDE_oSHgA" name="" memberEnd="_Zqdfor3HEe22AIDE_oSHgA _ZqMZ5L3HEe22AIDE_oSHgA">
+        <ownedEnd xmi:id="_Zqdfor3HEe22AIDE_oSHgA" name="" type="_ZpFmob3HEe22AIDE_oSHgA" association="_Zqdfob3HEe22AIDE_oSHgA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZqeGsb3HEe22AIDE_oSHgA" name="" memberEnd="_ZqeGsr3HEe22AIDE_oSHgA _ZqNA8L3HEe22AIDE_oSHgA">
+        <ownedEnd xmi:id="_ZqeGsr3HEe22AIDE_oSHgA" name="" type="_ZpFmob3HEe22AIDE_oSHgA" association="_ZqeGsb3HEe22AIDE_oSHgA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Zoyrsb3HEe22AIDE_oSHgA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Zoyrsr3HEe22AIDE_oSHgA" name="opencsv"/>
+    </packagedElement>
+    <profileApplication xmi:id="_ZiiSsL3HEe22AIDE_oSHgA">
+      <eAnnotations xmi:id="_Ziku8L3HEe22AIDE_oSHgA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_ZimkIL3HEe22AIDE_oSHgA" base_Package="_ZdqZwL3HEe22AIDE_oSHgA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Array xmi:id="_ZpLGMr3HEe22AIDE_oSHgA" dimensions="2" base_Element="_ZpKfJ73HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_Zp9wYL3HEe22AIDE_oSHgA" base_Element="_Zp9JUL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_Zp9wYr3HEe22AIDE_oSHgA" base_Element="_Zp9wYb3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_Zp-Xcb3HEe22AIDE_oSHgA" base_Element="_Zp-XcL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_Zp--gb3HEe22AIDE_oSHgA" base_Element="_Zp--gL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_Zp_lkL3HEe22AIDE_oSHgA" base_Element="_Zp--gr3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqAMoL3HEe22AIDE_oSHgA" base_Element="_Zp_lkb3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqCB0L3HEe22AIDE_oSHgA" base_Element="_ZqBawL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqDP8b3HEe22AIDE_oSHgA" base_Element="_ZqDP8L3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqD3Ab3HEe22AIDE_oSHgA" base_Element="_ZqD3AL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqHhYL3HEe22AIDE_oSHgA" base_Element="_ZqG6Ub3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqHhYr3HEe22AIDE_oSHgA" base_Element="_ZqHhYb3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqIIcb3HEe22AIDE_oSHgA" base_Element="_ZqIIcL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqJ9oL3HEe22AIDE_oSHgA" base_Element="_ZqJWkL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Annotations xmi:id="_ZqJ9ob3HEe22AIDE_oSHgA" base_Element="_ZqJWkL3HEe22AIDE_oSHgA">
+    <annotations xmi:id="_ZqJ9or3HEe22AIDE_oSHgA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqLy0b3HEe22AIDE_oSHgA" base_Element="_ZqLy0L3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqMZ4L3HEe22AIDE_oSHgA" base_Element="_ZqLy0r3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqMZ473HEe22AIDE_oSHgA" base_Element="_ZqMZ4b3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqMZ5b3HEe22AIDE_oSHgA" base_Element="_ZqMZ5L3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqNA8b3HEe22AIDE_oSHgA" base_Element="_ZqNA8L3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqNA9L3HEe22AIDE_oSHgA" base_Element="_ZqNA8r3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqNA9r3HEe22AIDE_oSHgA" base_Element="_ZqNA9b3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqNoAL3HEe22AIDE_oSHgA" base_Element="_ZqNA973HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqNoA73HEe22AIDE_oSHgA" base_Element="_ZqNoAb3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqNoBr3HEe22AIDE_oSHgA" base_Element="_ZqNoBL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqOPEL3HEe22AIDE_oSHgA" base_Element="_ZqNoB73HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqOPEr3HEe22AIDE_oSHgA" base_Element="_ZqOPEb3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqOPFL3HEe22AIDE_oSHgA" base_Element="_ZqOPE73HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqOPFr3HEe22AIDE_oSHgA" base_Element="_ZqOPFb3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqOPGL3HEe22AIDE_oSHgA" base_Element="_ZqOPF73HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqO2Ib3HEe22AIDE_oSHgA" base_Element="_ZqO2IL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Array xmi:id="_ZqO2JL3HEe22AIDE_oSHgA" dimensions="2" base_Element="_ZqO2Ir3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ZqPdML3HEe22AIDE_oSHgA" base_Element="_ZqO2Ir3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqcRgr3HEe22AIDE_oSHgA" base_Element="_ZqcRgL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqdfoL3HEe22AIDE_oSHgA" base_Element="_Zqc4kL3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqeGsL3HEe22AIDE_oSHgA" base_Element="_Zqdfob3HEe22AIDE_oSHgA"/>
+  <UMLLabProfile:Reference xmi:id="_ZqhKAL3HEe22AIDE_oSHgA" base_Element="_ZqeGsb3HEe22AIDE_oSHgA"/>
+</xmi:XMI>
